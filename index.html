@@ -28,7 +28,7 @@
     </nav>
     <header class="masthead bg-primary text-white text-center">
         <div class="container"><img class="img-fluid d-block mx-auto mb-5" src="assets/img/profile.png">
-            <h1 style="color: #00353a;height: 80px;">Ciaran Dunleavy</h1>
+            <h1 style="color: #00353a;height: 80px;">Ciaran Dunleavy (WIP)</h1>
             <h2 class="font-weight-light mb-0" style="color: #00353a;">3rd Year MSci Physics with Theoretical Physics Student&nbsp; at Imperial College London</h2>
         </div>
     </header>
@@ -40,13 +40,13 @@
                     <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-1">
                         <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
                             <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"><i class="fa fa-search-plus fa-3x"></i></div>
-                        </div><img class="img-fluid" src="assets/img/portfolio/cabin.png"></a>
+                        </div><img class="img-fluid" src="assets/img/portfolio/Compression.png" style="height: 253px;"></a>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-2">
                         <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
-                            <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"><i class="fa fa-search-plus fa-3x"></i></div>
-                        </div><img class="img-fluid" src="assets/img/portfolio/cake.png"></a>
+                            <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"></div>
+                        </div><img class="img-fluid" src="assets/img/portfolio/ThermoSimDiagram.jpg"></a>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-3">
@@ -142,37 +142,36 @@
     </div>
     <div class="d-lg-none scroll-to-top position-fixed rounded"><a class="d-block js-scroll-trigger text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a></div>
     <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-1">
-        <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-dialog modal-xl" role="document">
             <div class="modal-content">
                 <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
                 <div class="modal-body">
                     <div class="container text-center">
                         <div class="row">
                             <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/cabin.png">
-                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
-                                    itaque. Nam.</p>
+                                <h2 class="text-uppercase text-secondary mb-0" style="padding: 16px;">Compression algorithm</h2><img class="img-fluid mb-5" src="assets/img/portfolio/Compression.png">
+                                <p class="mb-5" style="padding: 16px;">I made a compression algorithm in C# using the arithmetic coding compression algorithm for a 1st year project in my physics degree. I also explored the LZW and Huffman coding algorithms, as well as the Wheeler-Burrows transform.
+                                    Unfortunately, the final product was flawed (not lossless as intended) due to an issue with float underflow, resulting in varying levels of success in exactly reconstructing the original message.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="#"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
+                <div class="modal-footer pb-5"><button class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" type="button"><i class="fa fa-close"></i>&nbsp;Close Project</button></div>
             </div>
         </div>
     </div>
     <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-2">
-        <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-dialog modal-xl" role="document">
             <div class="modal-content">
                 <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
                 <div class="modal-body">
                     <div class="container text-center">
                         <div class="row">
                             <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/cake.png">
-                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
-                                    itaque. Nam.</p>
+                                <h2 class="text-uppercase text-secondary mb-0" style="padding: 16px;">Thermodynamic Simulation</h2><video width="560" height="315" controls="" autoplay="" loop="" muted="" poster="/CollisionsVideo.mp4"></video>
+                                <p class="mb-5" style="padding: 16px;">In this project, coded in python with the SciPy and matplotlib modules, a gas was modelled as a collection of hard spheres undergoing elastic collisions. I tested several thermodynamics equations, including the relationship
+                                    between the degrees of freedom of a 'molecule' and ratio of gas pressure to gas density. The project included a visual representation of the collisions to make debugging easier. As well as the collision snapshot version
+                                    of the simulation (used for the calculations) , I also made a continuous motion simulation, containing up to 1500 hard spheres.</p>
                             </div>
                         </div>
                     </div>
@@ -182,27 +181,25 @@
         </div>
     </div>
     <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-3">
-        <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-dialog modal-xl" role="document">
             <div class="modal-content">
                 <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
                 <div class="modal-body">
                     <div class="container text-center">
                         <div class="row">
                             <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/circus.png">
-                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
-                                    itaque. Nam.</p>
+                                <h2 class="text-uppercase text-secondary mb-0" style="padding: 16px;">Self-Editing Code in Python - WIP</h2><img class="img-fluid sr-only mb-5" src="assets/img/portfolio/circus.png">
+                                <p class="mb-5" style="padding: 16px;">In this ongoing project, I treat small blocks of code as objects in the code. Using this, the blocks can alter the code contained in either themselves or other blocks already defined.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="#"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
+                <div class="modal-footer pb-5"><button class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" type="button"><i class="fa fa-close"></i>&nbsp;Close Project</button></div>
             </div>
         </div>
     </div>
     <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-4">
-        <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-dialog modal-xl" role="document">
             <div class="modal-content">
                 <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
                 <div class="modal-body">
@@ -222,7 +219,7 @@
         </div>
     </div>
     <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-5">
-        <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-dialog modal-xl" role="document">
             <div class="modal-content">
                 <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
                 <div class="modal-body">
@@ -242,7 +239,7 @@
         </div>
     </div>
     <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-6">
-        <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-dialog modal-xl" role="document">
             <div class="modal-content">
                 <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
                 <div class="modal-body">
