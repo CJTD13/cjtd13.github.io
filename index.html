@@ -15,21 +15,20 @@
     <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-dark text-uppercase" id="mainNav">
         <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top" style="color: #60c659;">Ciaran Dunleavy</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive"><a class="py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">My Projects</a><a class="py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About Me</a><a class="py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact Me</a>
-                <a
-                    href="mycv.html" style="padding: 16px;">My CV</a>
-                    <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item mx-0 mx-lg-1"></li>
-                        <li class="nav-item mx-0 mx-lg-1"></li>
-                        <li class="nav-item mx-0 mx-lg-1"></li>
-                    </ul>
+            <div class="collapse navbar-collapse" id="navbarResponsive"><a class="py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio" style="margin: 16px;">My Projects</a><a class="py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about" style="margin: 16px;">About ME</a><a class="py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                    href="#contact" style="margin: 16px;">Contact Me</a><a href="mycv.html" style="padding: 16px;">My CV</a>
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item mx-0 mx-lg-1"></li>
+                    <li class="nav-item mx-0 mx-lg-1"></li>
+                    <li class="nav-item mx-0 mx-lg-1"></li>
+                </ul>
             </div>
         </div>
     </nav>
     <header class="masthead bg-primary text-white text-center">
         <div class="container"><img class="img-fluid d-block mx-auto mb-5" src="assets/img/profile.png">
-            <h1 style="color: #00353a;height: 80px;">Ciaran Dunleavy (WIP)</h1>
-            <h2 class="font-weight-light mb-0" style="color: #00353a;">3rd Year MSci Physics with Theoretical Physics Student&nbsp; at Imperial College London</h2>
+            <h1 class="text-monospace flex-grow-1 flex-shrink-1" style="color: #00353a;height: 80px;padding: 0px;">Ciaran Dunleavy (WIP)</h1>
+            <h2 class="font-weight-light mb-0" style="color: #00353a;padding: 16px;">3rd Year MSci Physics with Theoretical Physics Student&nbsp; at Imperial College London</h2>
         </div>
     </header>
     <section id="portfolio" class="portfolio">
@@ -45,7 +44,7 @@
                 <div class="col-md-6 col-lg-4">
                     <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-2">
                         <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
-                            <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"></div>
+                            <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"><i class="fa fa-search-plus align-self-center fa-3x" style="height: 72px;width: 66px;color: #ffffff;"></i></div>
                         </div><img class="img-fluid" src="assets/img/portfolio/ThermoSimDiagram.jpg"></a>
                 </div>
                 <div class="col-md-6 col-lg-4">
@@ -149,14 +148,14 @@
                     <div class="container text-center">
                         <div class="row">
                             <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0" style="padding: 16px;">Compression algorithm</h2><img class="img-fluid mb-5" src="assets/img/portfolio/Compression.png">
-                                <p class="mb-5" style="padding: 16px;">I made a compression algorithm in C# using the arithmetic coding compression algorithm for a 1st year project in my physics degree. I also explored the LZW and Huffman coding algorithms, as well as the Wheeler-Burrows transform.
-                                    Unfortunately, the final product was flawed (not lossless as intended) due to an issue with float underflow, resulting in varying levels of success in exactly reconstructing the original message.</p>
+                                <h2 class="text-monospace text-uppercase text-secondary mb-0" style="padding: 16px;">Compression algorithm</h2><img class="img-fluid mb-5" src="assets/img/portfolio/Compression.png">
+                                <p class="mb-5" style="padding: 16px;">I, along with a partner, made a compression algorithm in C# using the arithmetic coding compression algorithm for a 1st year project in my physics degree. We also explored the LZW and Huffman coding algorithms, as well
+                                    as the Wheeler-Burrows transform.&nbsp;</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer pb-5"><button class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" type="button"><i class="fa fa-close"></i>&nbsp;Close Project</button></div>
+                <div class="modal-footer pb-5"></div>
             </div>
         </div>
     </div>
@@ -168,15 +167,17 @@
                     <div class="container text-center">
                         <div class="row">
                             <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0" style="padding: 16px;">Thermodynamic Simulation</h2><video width="560" height="315" autoplay="" loop="" muted=""><source src="assets/CollisionsVideo.mp4" type="video/mp4"></video>
-                                <p class="mb-5" style="padding: 16px;">In this project, coded in python with the SciPy and matplotlib modules, a gas was modelled as a collection of hard spheres undergoing elastic collisions. I tested several thermodynamics equations, including the relationship
-                                    between the degrees of freedom of a 'molecule' and ratio of gas pressure to gas density. The project included a visual representation of the collisions to make debugging easier. As well as the collision snapshot version
-                                    of the simulation (used for the calculations) , I also made a continuous motion simulation, containing up to 1500 hard spheres.</p>
+                                <h2 class="text-monospace text-uppercase text-secondary mb-0" style="padding: 16px;">Thermodynamic Simulation</h2>
+                                <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="assets/CollisionsVideo.mp4"></iframe></div>
+                                <p class="mb-5" style="padding: 16px;">In this project, coded in python with the SciPy and matplotlib modules, a gas was modelled as a collection of hard spheres undergoing elastic collisions in a spherical container, generalised to n dimensions. I tested several
+                                    thermodynamics equations, including the relationship between the degrees of freedom of the spheres (through the number of dimensions) and ratio of gas pressure to gas density. I also included a uniform acceleration,
+                                    to model the effects of gravity on a very small volume of gas. The project included a visual representation of the collisions to make debugging easier. As well as the collision snapshot (where each time step was determined
+                                    by the next collision) version of the simulation (used for the calculations) , I also made a continuous motion simulation, containing up to 1500 hard spheres.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="#"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
+                <div class="modal-footer pb-5"></div>
             </div>
         </div>
     </div>
@@ -194,7 +195,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer pb-5"><button class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" type="button"><i class="fa fa-close"></i>&nbsp;Close Project</button></div>
+                <div class="modal-footer pb-5"></div>
             </div>
         </div>
     </div>
@@ -214,7 +215,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="#"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
+                <div class="modal-footer pb-5"></div>
             </div>
         </div>
     </div>
@@ -234,7 +235,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="#"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
+                <div class="modal-footer pb-5"></div>
             </div>
         </div>
     </div>
@@ -254,7 +255,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="#"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
+                <div class="modal-footer pb-5"></div>
             </div>
         </div>
     </div>
